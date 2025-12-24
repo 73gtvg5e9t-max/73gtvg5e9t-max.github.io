@@ -114,7 +114,7 @@
     <div class="title-box">
         <h1>圣诞节快乐</h1>
         <p id="timeText">距离2024年圣诞已经过 0 天 0 小时 0 分钟 0 秒</p>
-        <p id="timeText" style="font-size: 20px;">点击雪花有惊喜哦(密码1225)</p>
+        <p id="timeText" style="font-size: 20px;">点击雪花有惊喜哦</p>
     </div>
 
     <!-- 中央密码框 -->
@@ -126,7 +126,7 @@
     <script>
         /* ---------- 时间计算 ---------- */
         function updateTime() {
-            let christmas = new Date("2024-12-25 00:00:00").getTime();
+            let christmas = new Date("2024-9-16 00:00:00").getTime();
             let now = Date.now();
 
             let diff = now - christmas;
@@ -141,7 +141,7 @@
             seconds %= 60;
 
             document.getElementById("timeText").innerText =
-                `❤在一起❤ 已经 ${days} 天 ${hours} 小时 ${minutes} 分钟 ${seconds} 秒`;
+                `你与章一鸣 已经度过 ${days} 天 ${hours} 小时 ${minutes} 分钟 ${seconds} 秒`;
         }
 
         updateTime();
@@ -150,7 +150,7 @@
         /* ---------- 密码校验 ---------- */
         document.getElementById("loginBtn").onclick = function () {
             let pwd = document.getElementById("pwd").value;
-            if (pwd === "1225") {
+            if (pwd === "0902") {
                 window.location.href = "./snow.html";
             } else {
                 alert("密码错误，再试一次吧 🎄");
@@ -167,4 +167,5 @@
 </body>
 
 </html>
+
 
